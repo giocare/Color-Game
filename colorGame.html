@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Color Game</title>
+	<link rel="stylesheet" type="text/css" href="colorStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+</head>
+<body>
+	<!-- we're using span because the value of rgb is constantly changing !-->
+	<h1>Can you guess which square
+		<br>
+		corresponds to the following color?
+		<br>
+	<span id="colorDisplay">RGB</span> 
+	<br>
+	</h1>
+
+	<div id="stripe">
+		<button id="reset">New Colors</button>
+		<span id="message"></span>
+		<button class="mode">Easy</button>
+		<button class="mode selected">Hard</button>
+	</div>
+
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+<script type="text/javascript" src="colorFunctions.js"></script>
+</body>
+</html>
